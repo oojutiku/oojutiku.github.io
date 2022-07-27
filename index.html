@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <title>Oyinkan Ojutiku</title>
+    <title>Oyinkan Ojutiku - Software Engineer</title>
+    <meta name="description" content="Creating beautiful software solutions in the modern age">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,13 +44,23 @@
                     </li>
                 </ul>
             </nav>
+            <button class="toggleBtn" onclick="toggleSideMenu()">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
         </header>
         <main>
             <section class="hero" id="intro">
                 <div class="intro">
                     <p class="smaller">Hi, I'm</p>
-                    <h1>Oyinkan Ojutiku</h1>
+                    <br>
+                    <h2>Oyinkan Ojutiku</h2>
                     <p>(Oh-yin-kawn)</p>
+                    <br>
                     <p class="lead">Software Engineer</p>
                 </div>
                 <img src="./woman-g3f942f5be_1280.png" height="600" />
@@ -66,10 +78,42 @@
 
             </section>
         </main>
+        <article class="sideMenu" id="sideMenu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a class="resume" href="/Oyinkansola_Ojutiku_Resume_2022.pdf" download="Oyinkan_Ojutiku_Resume">
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
         <footer>
 
         </footer>
     </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>
