@@ -6,6 +6,7 @@
     <meta name="description" content="Creating beautiful software solutions in the modern age">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
@@ -13,110 +14,245 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/f303553575.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>Oyinkan Ojutiku</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skills">
-                            Skills
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#experience">
-                            Experience
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a class="resume" href="/Oyinkansola_Ojutiku_Resume_2022.pdf" download="Oyinkan_Ojutiku_Resume">
-                            Resume
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="toggleBtn" onclick="toggleSideMenu()">
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <header class="container">
+        <h1><a href="#intro">Oyinkan Ojutiku</a></h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a class="resume" href="/Oyinkansola_Ojutiku_Resume_2022.pdf" download="Oyinkan_Ojutiku_Resume">
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button class="toggleBtn" onclick="toggleSideMenu()">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </header>
+    <main>
+        <section class="hero container" id="intro">
+            <div class="intro">
+                <h2>Oyinkan Ojutiku</h2>
+                <p class="lead">Software Engineer</p>
+                <br>
+                <button>Resume</button>
+                <span class="socials">
+                    <a href="https://www.linkedin.com/in/solaojutiku/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/oojutiku">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://hackerrank.com/Oyinkan">
+                        <i class="fa-brands fa-hackerrank"></i>
+                    </a>
+                    <a href="mailto:oyinkanojutiku@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </span>
+            </div>
+        </section>
+        <section class="about container" id="about">
+            <h2>About Me</h2>
+            <div class="content">
+                <div>
+                    I'm a <b>Developer</b> with a <b>B.S. in Software Engineering</b> and over <b>3 years of
+                        professional experience</b>.
+                    Coding is my passion and I'm always learning new tools and solutions.
+                    I also <b>freelance</b> in my spare time and create mods for some video games I play.
                 </div>
-            </button>
-        </header>
-        <main>
-            <section class="hero" id="intro">
-                <div class="intro">
-                    <p class="smaller">Hi, I'm</p>
-                    <br>
-                    <h2>Oyinkan Ojutiku</h2>
-                    <p>(Oh-yin-kawn)</p>
-                    <br>
-                    <p class="lead">Software Engineer</p>
+                <div class="skills">
+                    <i class="fa-brands fa-html5 fa-2xl" title="HTML5"></i>
+                    <i class="fa-brands fa-css3 fa-2xl" title="CSS3"></i>
+                    <i class="fa-brands fa-angular fa-2xl" title="Angular 13"></i>
+                    <i class="fa-brands fa-js fa-2xl" title="JavaScript"></i>
+                    <i class="fa-brands fa-java fa-2xl" title="Java"></i>
+                    <i class="fa-brands fa-python fa-2xl" title="Python"></i>
+                    <i class="fa-brands fa-react fa-2xl" title="ReactJs"></i>
                 </div>
-                <img src="./woman-g3f942f5be_1280.png" height="600" />
-            </section>
-            <section class="about" id="about">
+            </div>
+        </section>
+        <section class="experience container" id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="center-line"></div>
+                <div class="card left">
+                    <section>
+                        <i class="fa-solid fa-school"></i>
+                        <div class="details">
+                            <h3>Bachelor of Science</h3>
+                            <span>Jan 2014 - May 2018</span>
+                        </div>
+                        <p>Florida Institute of Technology</p>
+                        <ul>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="card right">
+                    <section>
+                        <i class="fa-solid fa-building"></i>
+                        <div class="details">
+                            <h3>Fairway Fisher</h3>
+                            <span>Jan 2017 - May 2017</span>
+                        </div>
+                        <p>A third person game where you fish on a golf course</p>
+                        <ul>
+                            <li>Unity</li>
+                            <li>C#</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="card left">
+                    <section>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div class="details">
+                            <h3>Ask Pete</h3>
+                            <span>Aug 2017 - May 2018</span>
+                        </div>
+                        <p>A chat box for Florida Tech freshmen to find their way around school</p>
+                        <ul>
+                            <li>Django</li>
+                            <li>AI</li>
+                            <li>Machine Learning</li>
+                            <li>Python</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="card right">
+                    <section>
+                        <i class="fa-solid fa-building"></i>
+                        <div class="details">
+                            <h3>Software Engineer I</h3>
+                            <span>Oct 2019 - Jan 2021</span>
+                        </div>
+                        <p>LexisNexis USA</p>
+                        <ul>
+                            <li>C#</li>
+                            <li>Java</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="card left">
+                    <section>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div class="details">
+                            <h3>Software Engineer II</h3>
+                            <span>Jan 2021 - Mar 2022</span>
+                        </div>
+                        <p>LexisNexis USA</p>
+                        <ul>
+                            <li>Angular</li>
+                            <li>C#</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="card right">
+                    <section>
+                        <i class="fa-solid fa-building"></i>
+                        <div class="details">
+                            <h3>Gamer's Den</h3>
+                            <span>September 2021 - Present</span>
+                        </div>
+                        <p>
+                            A video game database and organizer
+                        </p>
+                        <ul>
+                            <li>Angular</li>
+                            <li>JavaScript</li>
+                            <li>AWS</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="card left">
+                    <section>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div class="details">
+                            <h3>GD Scraper</h3>
+                            <span>July 2021 - Present</span>
+                        </div>
+                        <p>A web scraper</p>
+                        <ul>
+                            <li>Python</li>
+                            <li>MongoDB</li>
+                            <li>Scrapy</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="contact container" id="contact">
+            <h2>Leave me a message!</h2>
+            <div class="content">
+                <form action="/action_page.php">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address..">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="subject" placeholder="Write something.."
+                        style="height:170px"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <article class="sideMenu" id="sideMenu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a class="resume" href="/Oyinkansola_Ojutiku_Resume_2022.pdf" download="Oyinkan_Ojutiku_Resume">
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </article>
+    <footer>
 
-            </section>
-            <section class="skills" id="skills">
-
-            </section>
-            <section class="experience" id="experience">
-
-            </section>
-            <section class="contact" id="contact">
-
-            </section>
-        </main>
-        <article class="sideMenu" id="sideMenu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skills">
-                            Skills
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#experience">
-                            Experience
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a class="resume" href="/Oyinkansola_Ojutiku_Resume_2022.pdf" download="Oyinkan_Ojutiku_Resume">
-                            Resume
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </article>
-        <footer>
-
-        </footer>
-    </div>
+    </footer>
     <script src="/script.js"></script>
 </body>
 
