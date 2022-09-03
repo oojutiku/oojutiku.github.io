@@ -1,12 +1,13 @@
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
 
-    overlay = document.getElementById('overlay');
+    sunmoon = document.getElementById('sunmoon');
     if (themeName == 'dark') {
-        overlay.classList.add('dark');
-        overlay.classList.remove('light');
+        sunmoon.classList.add('fa-sun');
+        sunmoon.classList.remove('fa-moon');
     } else {
-        overlay.classList.remove('dark');
+        sunmoon.classList.remove('fa-sun');
+        sunmoon.classList.add('fa-moon');
     }
 
     localStorage.setItem('theme', themeName);
