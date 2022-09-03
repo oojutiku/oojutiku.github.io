@@ -1,7 +1,7 @@
 :root {
     --background: #FCFBF8;
     --text-color: #242321;
-    --primary: green;
+    --primary: #008000;
     --shadow: #e5e5e5;
     --secondary: white;
 }
@@ -9,10 +9,10 @@
 
 [data-theme="dark"] {
     --background: #121212;
-    --text-color: white;
+    --text-color: #ffffff;
     --primary: #5ca55c;
     --shadow: #202020;
-    --secondary: black;
+    --secondary: #000000;
 }
 
 * {
@@ -94,6 +94,8 @@ i {
     line-height: unset;
 }
 
+
+
 /*
 -------------------HEADER-----------------------------------
 */
@@ -159,13 +161,16 @@ nav ul li a:hover {
 }
 
 #themeSwitcher {
-    padding: 0px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
     border: none;
+    border-radius: 100%;
     text-align: center;
-    background: none;
+    background: var(--background);
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    bottom: 40px;
+    right: 3%;
 }
 
 #themeSwitcher i {
@@ -281,17 +286,18 @@ nav ul li a:hover {
     justify-content: center;
     font-size: 2em;
     text-transform: uppercase;
-    margin-top: 30px;
     min-height: 100vh;
 }
 
 .hero p {
     font-size: 1em;
+    text-align: center;
 }
 
 .hero h2 {
     font-size: 2em;
     border: none;
+    text-align: center;
 }
 
 .intro {
@@ -301,13 +307,17 @@ nav ul li a:hover {
 }
 
 .hero .socials {
-    padding: 5px 10px 10px;
+    padding: 5px;
     background-color: var(--shadow);
     border-radius: 10px;
-    margin-top: 10px;
-    height: 40px;
+    margin-top: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    position: fixed;
+    top: 35%;
+    left: -5px;
+    z-index: 3;
 }
 
 .socials a {
@@ -433,6 +443,7 @@ b {
 .card section ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card section li {
@@ -642,5 +653,14 @@ form textarea {
 
     .timeline .card {
         margin: 10px 0;
+    }
+
+    .hero .socials {
+        left: 30%;
+        top: unset;
+        bottom: 0px;
+        flex-direction: row;
+        padding: 5px 10px 10px;
+        height: 40px;
     }
 }
