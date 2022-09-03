@@ -655,12 +655,12 @@ form textarea {
         margin: 10px 0;
     }
 
-    .hero .socials {
+    /* .hero .socials {
         left: 30%;
         top: unset;
         bottom: 0px;
         flex-direction: row;
         padding: 5px 10px 10px;
         height: 40px;
-    }
+    } */
 }
