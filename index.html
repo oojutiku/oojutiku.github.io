@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Oyinkan Ojutiku - Software Engineer</title>
+    <meta charset="utf-8">
     <meta name="description" content="Creating beautiful software solutions in the modern age">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -46,7 +47,7 @@
                 </li>
             </ul>
         </nav>
-        <button class="toggleBtn" onclick="toggleSideMenu()">
+        <button class="toggleBtn" onclick="toggleSideMenu()" title="toggle menu" type="menu">
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -67,16 +68,16 @@
                     <i class="fa-solid fa-download"></i>
                 </a>
                 <span class="socials">
-                    <a href="https://www.linkedin.com/in/solaojutiku/">
+                    <a href="https://www.linkedin.com/in/solaojutiku/" title="LinkedIN">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/oojutiku">
+                    <a href="https://github.com/oojutiku" title="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://hackerrank.com/Oyinkan">
+                    <a href="https://hackerrank.com/Oyinkan" title="HackerRank">
                         <i class="fa-brands fa-hackerrank"></i>
                     </a>
-                    <a href="mailto:oyinkanojutiku@gmail.com">
+                    <a href="mailto:oyinkanojutiku@gmail.com" title="Email">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
                 </span>
@@ -223,8 +224,7 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Your email address..">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write something.."
-                        style="height:170px"></textarea>
+                    <textarea id="message" name="message" placeholder="Write something.."></textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -257,6 +257,24 @@
             </ul>
         </nav>
     </article>
+    <button id="themeSwitcher" title="Switch between light/dark mode" onclick="toggleTheme()" type="button">
+        <svg id="sunmoon" width="20" height="20">
+            <defs>
+                <mask id="hole">
+                    <rect width="100%" height="100%" fill="white" />
+                    <circle id="overlay" r="8" cx="23" cy="-3" fill="black" />
+                </mask>
+
+                <filter id="blur">
+                    <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="gold" />
+                </filter>
+            </defs>
+
+            <g filter="url(#blur)">
+                <circle fill="gold" id="donut" r="8" cx="10" cy="10" mask="url(#hole)" />
+            </g>
+        </svg>
+    </button>
     <script src="/script.js"></script>
 </body>
 

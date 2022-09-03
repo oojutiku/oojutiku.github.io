@@ -6,21 +6,23 @@
     --secondary: white;
 }
 
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #121212;
-        --text-color: white;
-        --primary: #5ca55c;
-        --shadow: #202020;
-        --secondary: black;
-    }
-} */
+
+[data-theme="dark"] {
+    --background: #121212;
+    --text-color: white;
+    --primary: #5ca55c;
+    --shadow: #202020;
+    --secondary: black;
+}
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    transition-property: background-color, border-color, box-shadow;
+    transition-duration: 1.2s;
+    transition-timing-function: ease-in-out;
 }
 
 body {
@@ -140,7 +142,6 @@ nav ul li a:hover {
 }
 
 .resume {
-    border: 2px solid var(--primary);
     border-radius: 5px;
     background-color: var(--primary);
     color: var(--secondary);
@@ -151,6 +152,24 @@ nav ul li a:hover {
 .resume i {
     font-size: 0.6em;
     vertical-align: middle;
+}
+
+#themeSwitcher {
+    padding: 0px;
+    border: none;
+    text-align: center;
+    background: none;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+svg #overlay.dark {
+    transform: translate(-9px, 9px);
+}
+
+svg #overlay {
+    transition: all 1.2s ease-in-out;
 }
 
 /*
@@ -164,8 +183,8 @@ nav ul li a:hover {
     right: 0px;
     top: 0px;
     width: 0%;
-    transition: width .5s ease-out;
-    padding-top: 10%;
+    transition: width .5s ease-out, background-color 1.2s ease-in-out;
+    padding-top: 60px;
 }
 
 .sideMenu nav {
@@ -470,8 +489,8 @@ form textarea {
 .flashy {
     position: relative;
     z-index: 0;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     touch-action: manipulation;
 }
 
@@ -492,8 +511,8 @@ form textarea {
     left: -2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px);
     -webkit-filter: blur(5px);
+    filter: blur(5px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing-button 20s linear infinite;
@@ -540,7 +559,7 @@ form textarea {
 
     .sideMenu.open {
         width: 50%;
-        padding: 10% 2%;
+        padding: 60px 2% 10% 2%;
         border-left: solid 2px var(--primary);
     }
 
