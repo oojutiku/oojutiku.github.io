@@ -3,8 +3,11 @@
     --text-color: #242321;
     --primary: #008000;
     --shadow: #e5e5e5;
-    --secondary: white;
+    --secondary: #ffffff;
+    --accent: #dfe0df;
+    --accent-70: #dfe0df77;
 }
+
 
 
 [data-theme="dark"] {
@@ -13,7 +16,10 @@
     --primary: #5ca55c;
     --shadow: #202020;
     --secondary: #000000;
+    --accent: #0d0d0d;
+    --accent-70: #0d0d0d77;
 }
+
 
 * {
     margin: 0px;
@@ -28,8 +34,9 @@
 body {
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background);
     overflow: hidden;
+    background-color: var(--background);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23008000' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .container {
