@@ -21,18 +21,26 @@ function toggleTheme() {
         setTheme('dark');
     }
 }
-// Immediately invoked function to set the theme on initial load
-(function () {
-    if (localStorage.getItem('theme') === 'dark') {
-        setTheme('dark');
-    } else {
-        setTheme('light');
-    }
-})();
 
 function toggleSideMenu() {
     sideMenu = document.getElementById('sideMenu');
     burger = document.getElementById('hamburger');
     sideMenu.classList.toggle("open");
     burger.classList.toggle("open");
+}
+
+if ('serviceWorker' in navigator) {
+    let registration;
+
+    const registerServiceWorker = async () => {
+        registration = await navigator.serviceWorker.register('./service-worker.js');
+    };
+
+    registerServiceWorker();
+}
+
+if (localStorage.getItem('theme') === 'dark') {
+    setTheme('dark');
+} else {
+    setTheme('light');
 }

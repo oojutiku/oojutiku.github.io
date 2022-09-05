@@ -609,6 +609,10 @@ form textarea {
         border-left: solid 2px var(--primary);
     }
 
+    .skills {
+        justify-content: flex-start;
+    }
+
     .sideMenu nav ul {
         flex-direction: column;
     }
