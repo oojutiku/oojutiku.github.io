@@ -488,6 +488,10 @@ b {
 -------------------CONTACT-----------------------------------
 */
 
+.contact {
+    min-height: calc(100vh - 95px);
+}
+
 .contact form {
     display: flex;
     flex-direction: column;
@@ -512,6 +516,14 @@ form textarea {
     border: solid 2px var(--primary);
     border-radius: 5px;
     color: var(--text-color);
+}
+
+/*---------------------------FOOTER------------------------------*/
+footer {
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
 }
 
 /*------------------ANIMATIONS------------------*/
@@ -666,12 +678,8 @@ form textarea {
         margin: 10px 0;
     }
 
-    /* .hero .socials {
-        left: 30%;
-        top: unset;
-        bottom: 0px;
-        flex-direction: row;
-        padding: 5px 10px 10px;
-        height: 40px;
-    } */
+    .contact {
+        min-height: calc(100vh - 110px);
+
+    }
 }
