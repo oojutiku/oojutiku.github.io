@@ -5,7 +5,6 @@
     --shadow: #e5e5e5;
     --secondary: #ffffff;
     --accent: #dfe0df;
-    --accent-70: #dfe0df77;
 }
 
 
@@ -17,7 +16,6 @@
     --shadow: #202020;
     --secondary: #000000;
     --accent: #0d0d0d;
-    --accent-70: #0d0d0d77;
 }
 
 
@@ -315,7 +313,7 @@ nav ul li a:hover {
 
 .hero .socials {
     padding: 5px;
-    background-color: var(--shadow);
+    background-color: var(--background);
     border-radius: 10px;
     margin-top: 20px;
     display: flex;
